@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Bóng Việt",
+    "description": "This project is really great.",
+    "slug": "bongda",
+    "privacy": "public",
+    "sdkVersion": "27.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.thang.bongda"
+    },
+    "android": {
+      "package": "com.thang.bongda",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "config": {
+        "googleSignIn": {
+          "apiKey": "AIzaSyCTYT9XKSKj6gI5DBow64hYl1DLE9oFV64",
+          "certificateHash": "2B27F3EE8E2F33DC4A4DDC5020AE7A4CC563C9A6"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "users" : {
+    "34iMbrTL6BVJbo0bpqffCeNasbj2" : {
+      "avatar" : "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&_nc_eui2=AeEy49-OxPz6tv0jL0jNZWgw5siSoN_BMyc2svVnKtCUfcMExS3RJRNfaO9gR9yNPYdJ4b4l9Q4Wj8qFUPCtKQQmkTvYdwIwre_V6vtDllyOfg&oh=b7b63c86b1e4704bdf0f676ee73385a4&oe=5B958449",
+      "email" : "demo7@gmail.com",
+      "fullName" : "Nguyễn Văn A",
+      "password" : "anhdax",
+      "phoneNumber" : "0949926268"
+    },
+    "5VsWNxKH6VUifgl5HZUPYZPR57A3" : {
+      "email" : "demo@gmail.com",
+      "password" : "anhdax"
+    },
+    "6xsup4xFVcSqR9hAznra9s3Oz7r1" : {
+      "avatar" : "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&_nc_eui2=AeEy49-OxPz6tv0jL0jNZWgw5siSoN_BMyc2svVnKtCUfcMExS3RJRNfaO9gR9yNPYdJ4b4l9Q4Wj8qFUPCtKQQmkTvYdwIwre_V6vtDllyOfg&oh=b7b63c86b1e4704bdf0f676ee73385a4&oe=5B958449",
+      "email" : "demo9@gmail.com",
+      "fullName" : "Nguyễn Văn H",
+      "password" : "anhdax",
+      "phoneNumber" : "0949926268"
+    },
+    "F6AaK9f4tRWrnnIOXiPlQx967bw2" : {
+      "avatar" : "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&_nc_eui2=AeEy49-OxPz6tv0jL0jNZWgw5siSoN_BMyc2svVnKtCUfcMExS3RJRNfaO9gR9yNPYdJ4b4l9Q4Wj8qFUPCtKQQmkTvYdwIwre_V6vtDllyOfg&oh=b7b63c86b1e4704bdf0f676ee73385a4&oe=5B958449",
+      "email" : "demo6@gmail.com",
+      "fullName" : "Nguyễn Văn G",
+      "password" : "anhdax",
+      "phoneNumber" : "0949926268"
+    },
+    "LwGTJlg1WIWZGi2S15FcLOg8HrJ3" : {
+      "avatar" : "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&_nc_eui2=AeEy49-OxPz6tv0jL0jNZWgw5siSoN_BMyc2svVnKtCUfcMExS3RJRNfaO9gR9yNPYdJ4b4l9Q4Wj8qFUPCtKQQmkTvYdwIwre_V6vtDllyOfg&oh=b7b63c86b1e4704bdf0f676ee73385a4&oe=5B958449",
+      "email" : "demo4@gmail.com",
+      "fullName" : "Nguyễn Văn F",
+      "password" : "anhdax",
+      "phoneNumber" : "0949926268"
+    },
+    "dZKFrNGqxlgUSfgjqri4YImNCKU2" : {
+      "avatar" : "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&_nc_eui2=AeEy49-OxPz6tv0jL0jNZWgw5siSoN_BMyc2svVnKtCUfcMExS3RJRNfaO9gR9yNPYdJ4b4l9Q4Wj8qFUPCtKQQmkTvYdwIwre_V6vtDllyOfg&oh=b7b63c86b1e4704bdf0f676ee73385a4&oe=5B958449",
+      "email" : "demo8@gmail.com",
+      "fullName" : "Nguyễn Văn E",
+      "password" : "anhdax",
+      "phoneNumber" : "0949926268"
+    },
+    "esK8aJtWvUMXuRl0lP2Ag03RePz2" : {
+      "avatar" : "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&_nc_eui2=AeEy49-OxPz6tv0jL0jNZWgw5siSoN_BMyc2svVnKtCUfcMExS3RJRNfaO9gR9yNPYdJ4b4l9Q4Wj8qFUPCtKQQmkTvYdwIwre_V6vtDllyOfg&oh=b7b63c86b1e4704bdf0f676ee73385a4&oe=5B958449",
+      "email" : "demo5@gmail.com",
+      "fullName" : "Nguyễn Văn D",
+      "password" : "anhdax",
+      "phoneNumber" : "0949926268",
+      "teams" : {
+        "-LDXJB2DqG9fY6ae8Un7" : "-LDXJAygWXTTuo1LYuJj"
+      }
+    },
+    "iRf4YZCPnpdj1H0Fx9gXBSu1mMa2" : {
+      "avatar" : "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&_nc_eui2=AeEy49-OxPz6tv0jL0jNZWgw5siSoN_BMyc2svVnKtCUfcMExS3RJRNfaO9gR9yNPYdJ4b4l9Q4Wj8qFUPCtKQQmkTvYdwIwre_V6vtDllyOfg&oh=b7b63c86b1e4704bdf0f676ee73385a4&oe=5B958449",
+      "email" : "demo3@gmail.com",
+      "fullName" : "Nguyễn Văn C",
+      "password" : "anhdax",
+      "phoneNumber" : "0949926268",
+      "teams" : {
+        "-LDXJB1zlEFjVWJQGeI4" : "-LDXJAygWXTTuo1LYuJj"
+      }
+    },
+    "o7d4Fjk3qQXHiwKJAIF9cdkQnnx1" : {
+      "avatar" : "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&_nc_eui2=AeEy49-OxPz6tv0jL0jNZWgw5siSoN_BMyc2svVnKtCUfcMExS3RJRNfaO9gR9yNPYdJ4b4l9Q4Wj8qFUPCtKQQmkTvYdwIwre_V6vtDllyOfg&oh=b7b63c86b1e4704bdf0f676ee73385a4&oe=5B958449",
+      "email" : "demo2@gmail.com",
+      "fullName" : "Nguyễn Văn B",
+      "password" : "anhdax",
+      "phoneNumber" : "0949926268",
+      "teams" : {
+        "-LDXJB2LI7eyynzX_WEn" : "-LDXJAygWXTTuo1LYuJj"
+      }
+    },
+    "vaslQaWpchMBDjNmLJjLHwScQaI2" : {
+      "avatar" : "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&_nc_eui2=AeEy49-OxPz6tv0jL0jNZWgw5siSoN_BMyc2svVnKtCUfcMExS3RJRNfaO9gR9yNPYdJ4b4l9Q4Wj8qFUPCtKQQmkTvYdwIwre_V6vtDllyOfg&oh=b7b63c86b1e4704bdf0f676ee73385a4&oe=5B958449",
+      "email" : "demo1@gmail.com",
+      "friends" : {
+        "-LDXH2XMBcDSzuKqYQAc" : {
+          "UID" : "iRf4YZCPnpdj1H0Fx9gXBSu1mMa2",
+          "avatar" : "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&_nc_eui2=AeEy49-OxPz6tv0jL0jNZWgw5siSoN_BMyc2svVnKtCUfcMExS3RJRNfaO9gR9yNPYdJ4b4l9Q4Wj8qFUPCtKQQmkTvYdwIwre_V6vtDllyOfg&oh=b7b63c86b1e4704bdf0f676ee73385a4&oe=5B958449",
+          "fullname" : "Nguyễn Văn C"
+        },
+        "-LDXH2XMBcDSzuKqYQAd" : {
+          "UID" : "esK8aJtWvUMXuRl0lP2Ag03RePz2",
+          "avatar" : "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&_nc_eui2=AeEy49-OxPz6tv0jL0jNZWgw5siSoN_BMyc2svVnKtCUfcMExS3RJRNfaO9gR9yNPYdJ4b4l9Q4Wj8qFUPCtKQQmkTvYdwIwre_V6vtDllyOfg&oh=b7b63c86b1e4704bdf0f676ee73385a4&oe=5B958449",
+          "fullname" : "Nguyễn Văn D"
+        },
+        "-LDXH2Xb17qyIC_8NlNj" : {
+          "UID" : "o7d4Fjk3qQXHiwKJAIF9cdkQnnx1",
+          "avatar" : "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&_nc_eui2=AeEy49-OxPz6tv0jL0jNZWgw5siSoN_BMyc2svVnKtCUfcMExS3RJRNfaO9gR9yNPYdJ4b4l9Q4Wj8qFUPCtKQQmkTvYdwIwre_V6vtDllyOfg&oh=b7b63c86b1e4704bdf0f676ee73385a4&oe=5B958449",
+          "fullname" : "Nguyễn Văn B"
+        }
+      },
+      "fullName" : "Nguyễn Văn A",
+      "password" : "anhdax",
+      "phoneNumber" : "0949926268"
+    }
+  }
+}

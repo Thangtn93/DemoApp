@@ -1,0 +1,35 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "devtools": "react-devtools"
+  },
+  "dependencies": {
+    "expo": "^27.0.1",
+    "firebase": "*",
+    "fuzzy": "*",
+    "lodash": "*",
+    "lunr": "^2.2.1",
+    "prop-types": "*",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz",
+    "react-native-action-button": "*",
+    "react-native-events-calendar": "*",
+    "react-native-modal-datetime-picker": "*",
+    "react-native-router-flux": "*",
+    "react-native-snap-carousel": "^3.7.1",
+    "react-native-super-grid": "^2.4.0",
+    "react-native-tab-view": "^1.0.2",
+    "react-native-vector-icons": "*",
+    "react-navigation": "*",
+    "react-redux": "*",
+    "redux": "*",
+    "redux-logger": "*",
+    "redux-thunk": "*",
+    "react-native-gifted-chat": "^0.4.3",
+    "moment": "^2.22.2",
+    "react-native-material-design-searchbar": "1.8.0",
+    "react-native-drawer": "2.5.0"
+  },
+  "devDependencies": {}
+}
