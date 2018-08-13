@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, View, Text, ScrollView, Image, TouchableHighlight, TouchableOpacity } from "react-native";
+import { StyleSheet, View, Text, ScrollView, Image, TouchableHighlight, TouchableOpacity, Platform } from "react-native";
 import Carousel from 'react-native-snap-carousel';
 import { Actions } from "react-native-router-flux";
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -14,7 +14,7 @@ import LoadingScreen from '../util/LoadingScreen';
 import { MARGIN_CARD } from '../../share/constant';
 import Util from '../../share/Util';
 import ImageSlider from "../../components/ImageSlider";
-import { ImagePicker } from 'expo';
+import { ImagePicker, Permissions } from 'expo';
 
 const WIDTH = Util.size.width;
 
@@ -38,7 +38,15 @@ class TeamProfile extends React.Component {
         this.props.actions.cancelRequestJoinTeam(this.props.userData.shortInfor.UID, this.props.searchReducer.teamSelect.ID);
     }
 
+    askPermissionsAsync = async () => {
+        await Permissions.askAsync(Permissions.CAMERA);
+        await Permissions.askAsync(Permissions.CAMERA_ROLL);
+    };
+
     _onPressEditAvatar = async (oldUrl) => {
+        if(Platform.OS === "ios"){
+            await this.askPermissionsAsync();
+        }
         let result = await ImagePicker.launchImageLibraryAsync({
             allowsEditing: false,
             aspect: [1, 1],
@@ -159,6 +167,9 @@ class TeamProfile extends React.Component {
     }
 
     _editImage = async (oldUrl, index) => {
+        if(Platform.OS === "ios"){
+            await this.askPermissionsAsync();
+        }
         let result = await ImagePicker.launchImageLibraryAsync({
             allowsEditing: false,
             aspect: [1, 1],
@@ -170,6 +181,9 @@ class TeamProfile extends React.Component {
     };
 
     _uploadImage = async (oldUrl, index) => {
+        if(Platform.OS === "ios"){
+            await this.askPermissionsAsync();
+        }
         let result = await ImagePicker.launchImageLibraryAsync({
             allowsEditing: false,
             aspect: [1, 1],

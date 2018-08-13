@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { StyleSheet, View, Text, ScrollView, Image, TouchableHighlight, TouchableOpacity } from "react-native";
+import { StyleSheet, View, Text, ScrollView, Image, TouchableHighlight, TouchableOpacity, Platform } from "react-native";
 import Carousel from 'react-native-snap-carousel';
-import { ImagePicker } from 'expo';
+import { ImagePicker, Permissions } from 'expo';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import HeaderBack from '../../components/HeaderBack';
 import TextIcon from '../../components/TextIcon/TextIcon';
@@ -35,7 +35,16 @@ class UserProfile extends React.Component {
         this.props.actions.unfollow(this.props.userData.shortInfor.UID, this.props.searchReducer.userSelect.shortInfor.UID);
     }
 
+    askPermissionsAsync = async () => {
+        await Permissions.askAsync(Permissions.CAMERA);
+        await Permissions.askAsync(Permissions.CAMERA_ROLL);
+    };
+
     _onPressEditAvatar = async (oldUrl) => {
+        if(Platform.OS === "ios"){
+            await this.askPermissionsAsync();
+        }
+        
         let result = await ImagePicker.launchImageLibraryAsync({
             allowsEditing: false,
             aspect: [1, 1],
@@ -108,6 +117,9 @@ class UserProfile extends React.Component {
     }
 
     _editImage = async (oldUrl, index) => {
+        if(Platform.OS === "ios"){
+            await this.askPermissionsAsync();
+        }
         let result = await ImagePicker.launchImageLibraryAsync({
             allowsEditing: false,
             aspect: [1, 1],
@@ -119,6 +131,9 @@ class UserProfile extends React.Component {
     };
 
     _uploadImage = async (oldUrl, index) => {
+        if(Platform.OS === "ios"){
+            await this.askPermissionsAsync();
+        }
         let result = await ImagePicker.launchImageLibraryAsync({
             allowsEditing: false,
             aspect: [1, 1],
