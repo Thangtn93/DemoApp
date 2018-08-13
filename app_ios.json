@@ -38,6 +38,9 @@
           "certificateHash": "2B27F3EE8E2F33DC4A4DDC5020AE7A4CC563C9A6"
         }
       }
-    }
+    },
+	"facebookScheme": "fb1595919987201609",
+	"facebookAppId": "1595919987201609",
+	"facebookDisplayName": "Bóng việt"
   }
 }
