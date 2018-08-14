@@ -7,7 +7,7 @@ import { bindActionCreators } from 'redux';
 import * as todoActions from '../actions/todoActions';
 import Main from '../screen/Main';
 import Logo from '../components/Logo';
-import FacebookLogin from '../components/LoginSignup/FacebookLogin';
+// import FacebookLogin from '../components/LoginSignup/FacebookLogin';
 import GoogleLogin from '../components/LoginSignup/GoogleLogin';
 import InputTextIconVector from '../components/InputText/InputTextIconVector';
 import ButtonLoading from '../components/Buttons/ButtonLoading';
@@ -66,7 +66,6 @@ class LoginScreen extends Component {
         <View style={{ height: this.state.visibleHeight }}>
           <ScrollView>
             <Logo />
-            <FacebookLogin {...this.props} />
             <GoogleLogin {...this.props} />
 
             <InputTextIconVector source='email-outline'
