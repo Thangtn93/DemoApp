@@ -26,6 +26,8 @@ export default class GoogleLogin extends React.Component {
         const { type, accessToken, idToken } = await Google.logInAsync({
             androidStandaloneAppClientId: '<ANDROID_CLIENT_ID>',
             iosStandaloneAppClientId: '<IOS_CLIENT_ID>',
+            androidClientId: '732120503804-7ptec2gobbuh115cu6vdj397a6ssm066.apps.googleusercontent.com',
+            iosClientId: '732120503804-luiaivdosifpn4u8lhqigkuq97g9cah7.apps.googleusercontent.com',
             scopes: ['profile', 'email'],
         });
         if (type === 'success') {
@@ -51,7 +53,7 @@ export default class GoogleLogin extends React.Component {
                     underlayColor={styles.facebookButton.backgroundColor}
                     onPress={() => this.handleGoogleButton()}
                 >
-                    <Text style={styles.facebookButtonText}>Log in with Google</Text>
+                    <Text style={styles.facebookButtonText}>Đăng nhập bằng Google ++ </Text>
                 </TouchableHighlight>
             </View>
         );
