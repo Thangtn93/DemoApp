@@ -101,6 +101,7 @@ const styles = StyleSheet.create({
     },
     slide: {
         width: 640,
+        height: 240,
     },
     card: {
         // width: 640,
