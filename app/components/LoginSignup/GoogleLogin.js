@@ -26,8 +26,13 @@ export default class GoogleLogin extends React.Component {
         const { type, accessToken, idToken } = await Google.logInAsync({
             androidStandaloneAppClientId: '<ANDROID_CLIENT_ID>',
             iosStandaloneAppClientId: '<IOS_CLIENT_ID>',
-            androidClientId: '732120503804-d71tngrrvj9e3g9ghuc12381a46qgv76.apps.googleusercontent.com',
-            iosClientId: '732120503804-luiaivdosifpn4u8lhqigkuq97g9cah7.apps.googleusercontent.com',
+            /*
+            Client ID lấy từ link 
+            https://console.cloud.google.com/apis/credentials?project=bongviet-156bf
+            OAuth 2.0 client IDs-> name: fireabase
+            */
+            androidClientId: '732120503804-3fh7mat7v6aeuhrcf4180dlccsm0japr.apps.googleusercontent.com',
+            iosClientId: '732120503804-3fh7mat7v6aeuhrcf4180dlccsm0japr.apps.googleusercontent.com',
             scopes: ['profile', 'email'],
         });
         if (type === 'success') {
