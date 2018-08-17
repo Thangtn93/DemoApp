@@ -26,6 +26,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.thang.football"
+      
     },
     "android": {
       "package": "com.thang.football",
@@ -34,8 +35,15 @@
       ],
       "config": {
         "googleSignIn": {
+          /*
+           apiKey lấy từ link
+               https://console.cloud.google.com/apis/credentials?project=bongviet-156bf
+                name:bongviet apikey (khi xóa thay đổi apikey này apikey firebase sẽ thay đổi theo)
+           certificateHash
+           sẽ thay đổi theo slug khai báo file app.json
+          */
           "apiKey": "AIzaSyDNwqJ2GQR49mZtS0yJvhzPLCekjA9LIE8",
-          "certificateHash": "E8EDB32A81BE26EF586F1E6163AD1CFF20AAA0FE"
+          "certificateHash": "A57A6D4A30EFF8756E069878814B68F7230DF4A1"
         }
       }
     }
