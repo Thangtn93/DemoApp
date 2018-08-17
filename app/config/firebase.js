@@ -15,7 +15,7 @@ firebase.initializeApp({
     // storageBucket: "football-3a5da.appspot.com",
     // messagingSenderId: "1084900365322"
 
-    apiKey: "AIzaSyClSLlWNQzPuerHP9iLUauKzuf48kk0sG4",
+    apiKey: "AIzaSyDNwqJ2GQR49mZtS0yJvhzPLCekjA9LIE8",
     authDomain: "bongviet-156bf.firebaseapp.com",
     databaseURL: "https://bongviet-156bf.firebaseio.com",
     projectId: "bongviet-156bf",
