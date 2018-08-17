@@ -26,7 +26,7 @@ export default class GoogleLogin extends React.Component {
         const { type, accessToken, idToken } = await Google.logInAsync({
             androidStandaloneAppClientId: '<ANDROID_CLIENT_ID>',
             iosStandaloneAppClientId: '<IOS_CLIENT_ID>',
-            androidClientId: '732120503804-7ptec2gobbuh115cu6vdj397a6ssm066.apps.googleusercontent.com',
+            androidClientId: '732120503804-d71tngrrvj9e3g9ghuc12381a46qgv76.apps.googleusercontent.com',
             iosClientId: '732120503804-luiaivdosifpn4u8lhqigkuq97g9cah7.apps.googleusercontent.com',
             scopes: ['profile', 'email'],
         });
