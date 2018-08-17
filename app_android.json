@@ -2,7 +2,7 @@
   "expo": {
     "name": "Bóng Việt",
     "description": "This project is really great.",
-    "slug": "bongda",
+    "slug": "football",
     "privacy": "public",
     "sdkVersion": "27.0.0",
     "platforms": [
@@ -25,17 +25,17 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.thang.bongda"
+      "bundleIdentifier": "com.thang.football"
     },
     "android": {
-      "package": "com.thang.bongda",
+      "package": "com.thang.football",
       "permissions": [
         "READ_EXTERNAL_STORAGE"
       ],
       "config": {
         "googleSignIn": {
-          "apiKey": "AIzaSyCTYT9XKSKj6gI5DBow64hYl1DLE9oFV64",
-          "certificateHash": "2B27F3EE8E2F33DC4A4DDC5020AE7A4CC563C9A6"
+          "apiKey": "AIzaSyDNwqJ2GQR49mZtS0yJvhzPLCekjA9LIE8",
+          "certificateHash": "E8EDB32A81BE26EF586F1E6163AD1CFF20AAA0FE"
         }
       }
     }
