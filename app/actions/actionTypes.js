@@ -77,3 +77,7 @@ export const JOIN_FREE_MATCH = 'JOIN_FREE_MATCH';
 export const LEAVE_FREE_MATCH = 'LEAVE_FREE_MATCH';
 export const CREATE_FREE_MATCH = 'CREATE_FREE_MATCH';
 export const DELETE_FREE_MATCH = 'DELETE_FREE_MATCH';
+
+// giải đấu
+export const ADD_GIAI_DAU = 'ADD_GIAI_DAU';
+export const LOAD_ALL_GIAI_DAU = 'LOAD_ALL_GIAI_DAU';

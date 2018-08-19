@@ -41,6 +41,9 @@ class TeamManager extends Component {
                     // Actions.listTeamScreen({ type: "reset" })
                     Actions.chatScreen({ matchID: this.props.teamReducer.ID });
                     break;
+                case 6:
+                    Actions.listGiaiDau();
+                    break;
             }
         } else {
             switch (index) {
@@ -70,6 +73,7 @@ class TeamManager extends Component {
                 { title: 'Lịch thi đấu', icon: require('../../assets/Icon_lichthidau.jpg') },
                 { title: 'Danh sách thành viên', icon: require('../../assets/Icon_thanhvien.png') },
                 { title: 'Chát nhóm', icon: require('../../assets/Icon_chatnhom.png') },
+                { title: 'Giải đấu', icon: require('../../assets/icon_giaidau.png') },
             ]
         } else {
             menu = [

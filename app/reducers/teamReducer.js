@@ -14,7 +14,7 @@ const initialState = {
   member: [],
   matchs: [],
   requestJoinTeam: [],
-  images: []
+  images: [],
 };
 
 export default function teamReducer(state = initialState, action) {

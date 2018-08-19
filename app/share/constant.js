@@ -4,6 +4,8 @@ export const SIGNUP_LINK = `https://us-central1-bongviet-156bf.cloudfunctions.ne
 export const SIGNIN_LINK = `https://us-central1-bongviet-156bf.cloudfunctions.net/signIn`;
 export const SEARCH_LINK = `https://us-central1-bongviet-156bf.cloudfunctions.net/search`;
 
+export const DEFAULT_GIAI_DAU_AVATAR = `https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?_nc_cat=0&_nc_eui2=AeEy49-OxPz6tv0jL0jNZWgw5siSoN_BMyc2svVnKtCUfcMExS3RJRNfaO9gR9yNPYdJ4b4l9Q4Wj8qFUPCtKQQmkTvYdwIwre_V6vtDllyOfg&oh=b7b63c86b1e4704bdf0f676ee73385a4&oe=5B958449`;
+
 export const LIST_KHU_VUC = [
     { key: 1, label: 'Ba Đình' },
     { key: 2, label: 'Bắc Từ Liêm' },

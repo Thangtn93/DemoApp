@@ -34,6 +34,9 @@ import EditProfile from './screen/user/EditProfile';
 import SearchScreen from './screen/search/SearchScreen';
 import SearchResult from './screen/search/SearchResult';
 
+import ListGiaiDau from './screen/giaidau/ListGiaiDau';
+import TaoGiaiDau from './screen/giaidau/TaoGiaiDau';
+
 export default class App extends Component {
   render() {
     return (
@@ -186,6 +189,18 @@ export default class App extends Component {
           <Scene key='editUserProfileScreen'
             animation='fade'
             component={EditProfile}
+            panHandlers={null}
+            hideNavBar={true} />
+
+          <Scene key='listGiaiDau'
+            animation='fade'
+            component={ListGiaiDau}
+            panHandlers={null}
+            hideNavBar={true} />
+
+          <Scene key='taoGiaiDau'
+            animation='fade'
+            component={TaoGiaiDau}
             panHandlers={null}
             hideNavBar={true} />
         </Scene>

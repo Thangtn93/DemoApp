@@ -17,7 +17,7 @@ import ImageSlider from "../../components/ImageSlider";
 
 const WIDTH = Util.size.width;
 
-class UserProfile extends React.Component {
+class GiaiDauProfile extends React.Component {
 
     constructor(props) {
         super(props);
@@ -67,6 +67,7 @@ class UserProfile extends React.Component {
                     <View style={styles.coverTitle}>
                         <Text style={styles.coverName}>{userData.shortInfor.fullName}</Text>
                         <TextIcon text={userData.shortInfor.phoneNumber} icon='phone' />
+                        <TextIcon text={userData.shortInfor.email} icon='email-outline' />
                         <TextIcon text={userData.shortInfor.address} icon='map-marker' />
                         <Text>Vị trí sở trường: {userData.shortInfor.vitrisotruong}</Text>
                         <Text>Trình độ: {userData.shortInfor.level}</Text>
@@ -261,4 +262,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(UserProfile);
+export default connect(mapStateToProps, mapDispatchToProps)(GiaiDauProfile);

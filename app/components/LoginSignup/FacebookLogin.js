@@ -3,14 +3,8 @@ import { StyleSheet, Text, TouchableHighlight, View, Alert } from 'react-native'
 import { Facebook } from 'expo';
 import firebase from '../../config/firebase';
 
-/* Enter your Facebooko app ID here.
-FACEBOOK_APP_ID lấy từ link
-https://developers.facebook.com/apps/2166683270236145/settings/basic/
-ID:2166683270236145
-key secret: 3f30a0c5f3c294c9d2c31891673ebdee
-*/
-
-const FACEBOOK_APP_ID = '2166683270236145';
+// Enter your Facebooko app ID here.
+const FACEBOOK_APP_ID = '1683355278448407';
 
 
 const auth = firebase.auth();
@@ -63,7 +57,7 @@ export default class FacebookLogin extends React.Component {
                     underlayColor={styles.facebookButton.backgroundColor}
                     onPress={() => this.handleFacebookButton()}
                 >
-                    <Text style={styles.facebookButtonText}>Đăng nhập bằng Facebook</Text>
+                    <Text style={styles.facebookButtonText}>Log in with Facebook</Text>
                 </TouchableHighlight>
             </View>
         );

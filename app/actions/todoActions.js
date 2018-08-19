@@ -1397,3 +1397,65 @@ export function editAvatarProfile(isEditUserAvatar, oldUrl, imageUrl, UID) {
     })(dispatch, oldUrl, imageUrl, UID);
   }
 }
+
+export function taoGiaiDau(
+  tengiaidau,
+  donvitochuc,
+  sodoithamgia,
+  sobangdau,
+  playoff,
+  sodoiuutien,
+  dateFrom,
+  dateTo
+) {
+  return (dispatch, getState) => {
+    var giaiDauRef = firebase.database().ref('leagues');
+    var league = {
+      avatar: constants.DEFAULT_GIAI_DAU_AVATAR,
+      tengiaidau: tengiaidau,
+      donvitochuc: donvitochuc,
+      sodoithamgia: sodoithamgia,
+      sobangdau: sobangdau,
+      playoff: playoff,
+      sodoiuutien: sodoiuutien,
+      dateFrom: dateFrom,
+      dateTo: dateTo
+    }
+    giaiDauRef.push(league).then((snap) => {
+      giaiDauRef.child(snap.key + '/ID').set(snap.key);
+      league.ID = snap.key;
+      dispatch({
+        type: types.ADD_GIAI_DAU,
+        league
+      })
+      Alert.alert('',
+        'Tạo trận thành công',
+        [
+          { text: 'OK', onPress: () => Actions.pop() },
+        ],
+      )
+    });
+  }
+}
+
+export function getAllLeague() {
+  return (dispatch, getState) => {
+    dispatch(changeCondition({ isLoading: true }));
+    var allGiaiDau = [];
+    firebase.database().ref('leagues').once('value').then(snapshot => {
+      if (snapshot.val() !== null) {
+        allGiaiDau = Object.values(snapshot.val());
+        console.log('getAllLeague')
+        console.log(allGiaiDau)
+        dispatch({
+          type: types.LOAD_ALL_GIAI_DAU,
+          allGiaiDau
+        })
+        dispatch(changeCondition({ isLoading: false }));
+      } else {
+        dispatch(changeCondition({ isLoading: false }));
+      }
+
+    });
+  }
+}

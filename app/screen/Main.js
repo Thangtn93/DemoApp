@@ -27,7 +27,7 @@ class Main extends Component {
     _onPressCell(index) {
         switch (index) {
             case 0:
-                Actions.userProfileScreen({ isFromSearch: false });
+                Actions.userProfileScreen();
                 break;
             case 1:
                 Actions.listTeamScreen();
@@ -98,9 +98,9 @@ class Main extends Component {
                             </View>
                         }
                     />
-
+                    
                     <FlatList
-                        style={{ paddingVertical: 50 }}
+                        style={{paddingVertical: 50}}
                         data={[
                             { title: 'Thông tin cá nhân', icon: require('../assets/Icon_thongtincanhan.jpg') },
                             { title: 'Quản lý đội', icon: require('../assets/Icon_doibong.jpg') },
@@ -120,7 +120,7 @@ class Main extends Component {
                         keyExtractor={(item, index) => index}
                         ItemSeparatorComponent={this.renderSeparator}
                     />
-
+                    
                 </View>
             </Drawer>
         );

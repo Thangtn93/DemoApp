@@ -68,7 +68,7 @@ class LoginScreen extends Component {
             <Logo />
             <FacebookLogin {...this.props} />
             <GoogleLogin {...this.props} />
-            
+
             <InputTextIconVector source='email-outline'
               onChangeText={this._onChangeEmail}
               value={formData.email}

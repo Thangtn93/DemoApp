@@ -18,7 +18,8 @@ const Logo = props => {
 
   return (
       <View style={styles.container}>
-          <Image resizeMode="contain" source={logoImg} style={styles.logo} />
+          {/* <Image source={logoImg} style={styles.logo} /> */}
+          <Text style={styles.logo}>Bóng Việt</Text>
       </View>
   );
 }
@@ -27,14 +28,14 @@ const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'center',
-        marginVertical: 20,
+        marginVertical: 10
     },
     logo: {
-        width: DEVICE_WIDTH - 40,
-        // color: 'rgb(145,200,78)',
-        // // color: 'white',
-        // fontSize: 80,
-        // fontWeight: 'bold',
+        // width: DEVICE_WIDTH - 40,
+        color: 'rgb(145,200,78)',
+        // color: 'white',
+        fontSize: 80,
+        fontWeight: 'bold',
     },
 });
 

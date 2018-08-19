@@ -10,11 +10,12 @@ const TextIcon = props => {
     const {
         icon,
         text,
+        size
     } = props;
 
     return (
         <View style={styles.textContainer}>
-            <Icon size={14} name={icon}></Icon>
+            <Icon size={(typeof size === 'undefined') ? 14 : size} name={icon}></Icon>
             <Text style={{ marginLeft: 5 }}>{text}</Text>
         </View>
     );

@@ -7,6 +7,8 @@ const initialState = {
   teams: {},
   freeMatch: {},
   freeMatchs: [],
+  yourGiaiDau: [], // giải đấu team tham gia
+  allGiaiDau: [] // toàn bộ giải đấu
 };
 
 export default function userDataReducer(state = initialState, action) {
@@ -84,6 +86,13 @@ export default function userDataReducer(state = initialState, action) {
       delete state.freeMatch[action.match.ID];
       state.freeMatchs.splice(state.freeMatchs.indexOf(action.match), 1);
       return Object.assign({}, state, { freeMatch: state.freeMatch, freeMatchs: state.freeMatchs });
+
+    case types.ADD_GIAI_DAU:
+      var newState = Object.assign({}, state, { allGiaiDau: [...state.allGiaiDau, action.league] });
+      return newState;
+
+    case types.LOAD_ALL_GIAI_DAU:
+      return Object.assign({}, state, { allGiaiDau: action.allGiaiDau });
 
     default:
       return state;

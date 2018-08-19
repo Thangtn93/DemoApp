@@ -18,6 +18,7 @@ class EditProfile extends React.Component {
 
         this.state = {
             name: '',
+            email: '',
             phoneNumber: '',
             address: '',
             description: '',
@@ -56,6 +57,7 @@ class EditProfile extends React.Component {
             const { userData } = this.props;
             this.setState({
                 name: userData.shortInfor.fullName,
+                email: userData.shortInfor.email,
                 phoneNumber: userData.shortInfor.phoneNumber,
                 address: userData.shortInfor.address,
                 description: userData.shortInfor.description,
@@ -76,6 +78,10 @@ class EditProfile extends React.Component {
 
     _onChangeName = value => {
         this.setState({ name: value });
+    };
+
+    _onChangeEmail = value => {
+        this.setState({ email: value });
     };
 
     _onChangePhoneNumber = value => {
@@ -124,6 +130,18 @@ class EditProfile extends React.Component {
                             autoCapitalize={'none'}
                             returnKeyType={'done'}
                             autoCorrect={false} />
+
+                        {this.props.isEditUserProfile ?
+                            <InputTextIconVector source='email-outline'
+                                onChangeText={this._onChangeEmail}
+                                value={this.state.email}
+                                placeholder='Email'
+                                returnKeyType={'done'}
+                                autoCapitalize={'none'}
+                                autoCorrect={false} />
+                            :
+                            <View />
+                        }
 
                         <InputTextIconVector source='phone'
                             onChangeText={this._onChangePhoneNumber}

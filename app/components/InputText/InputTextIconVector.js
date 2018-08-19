@@ -16,6 +16,7 @@ const InputTextIconVector = props => {
         returnKeyType,
         onChangeText,
         value,
+        keyboardType
     } = props;
 
     return (
@@ -33,6 +34,7 @@ const InputTextIconVector = props => {
                 autoCapitalize={autoCapitalize}
                 returnKeyType={returnKeyType}
                 value={value}
+                keyboardType={keyboardType}
                 borderWidth={0}
                 borderColor='transparent'
                 placeholderTextColor='black'
