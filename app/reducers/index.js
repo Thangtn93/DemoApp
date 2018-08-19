@@ -6,6 +6,7 @@ import pitchReducer from './pitchReducer';
 import newTeamReducer from './newTeamReducer';
 import teamReducer from './teamReducer';
 import searchReducer from './searchReducer';
+import leagueReducer from './leagueReducer';
 
 const rootReducer = combineReducers({
   formData,
@@ -14,7 +15,8 @@ const rootReducer = combineReducers({
   pitchReducer,
   newTeamReducer,
   teamReducer,
-  searchReducer
+  searchReducer,
+  leagueReducer
 });
 
 export default rootReducer;

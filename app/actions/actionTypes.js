@@ -81,3 +81,4 @@ export const DELETE_FREE_MATCH = 'DELETE_FREE_MATCH';
 // giải đấu
 export const ADD_GIAI_DAU = 'ADD_GIAI_DAU';
 export const LOAD_ALL_GIAI_DAU = 'LOAD_ALL_GIAI_DAU';
+export const LOAD_TEAM_MEMBER = 'LOAD_TEAM_MEMBER';

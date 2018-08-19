@@ -1459,3 +1459,47 @@ export function getAllLeague() {
     });
   }
 }
+
+export function loadMemberOfTeam(teamID) {
+  return (dispatch, getState) => {
+    dispatch(changeCondition({ isLoading: true }));
+    firebase.database().ref('teams/' + teamID + '/').once('value').then(snapshot => {
+      var team = snapshot.val();
+
+      // member
+      var promise = [];
+      var member = [];
+
+      Object.keys(team.member.admin).forEach((UID) => {
+        firebase.database().ref('users/' + UID).once('value').then(snapshot => {
+          promise.push(member.push({
+            UID: UID,
+            fullName: snapshot.val().shortInfor.fullName,
+            avatar: snapshot.val().shortInfor.avatar,
+          }));
+        });
+      });
+
+      if (team.member.member !== undefined) {
+        Object.keys(team.member.member).forEach((UID) => {
+          firebase.database().ref('users/' + UID).once('value').then(snapshot => {
+            promise.push(member.push({
+              UID: UID,
+              fullName: snapshot.val().shortInfor.fullName,
+              avatar: snapshot.val().shortInfor.avatar,
+            }));
+          });
+        });
+      }
+
+      Promise.all(promise).then(results => {
+        dispatch({
+          type: types.LOAD_TEAM_MEMBER,
+          member
+        });
+        dispatch(changeCondition({ isLoading: false }));
+      })
+
+    })
+  }
+};

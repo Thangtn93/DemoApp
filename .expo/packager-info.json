@@ -1,8 +1,8 @@
 {
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 14000,
-  "expoServerNgrokUrl": "https://hb-bud.nguyenthedan.football.exp.direct",
-  "packagerNgrokUrl": "https://packager.hb-bud.nguyenthedan.football.exp.direct",
-  "ngrokPid": 4020
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }

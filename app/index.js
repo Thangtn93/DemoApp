@@ -36,6 +36,8 @@ import SearchResult from './screen/search/SearchResult';
 
 import ListGiaiDau from './screen/giaidau/ListGiaiDau';
 import TaoGiaiDau from './screen/giaidau/TaoGiaiDau';
+import SelectTeam from './screen/giaidau/SelectTeam';
+import SelectMember from './screen/giaidau/SelectMember';
 
 export default class App extends Component {
   render() {
@@ -201,6 +203,18 @@ export default class App extends Component {
           <Scene key='taoGiaiDau'
             animation='fade'
             component={TaoGiaiDau}
+            panHandlers={null}
+            hideNavBar={true} />
+
+          <Scene key='chonTeam'
+            animation='fade'
+            component={SelectTeam}
+            panHandlers={null}
+            hideNavBar={true} />
+
+          <Scene key='chonThanhVien'
+            animation='fade'
+            component={SelectMember}
             panHandlers={null}
             hideNavBar={true} />
         </Scene>
